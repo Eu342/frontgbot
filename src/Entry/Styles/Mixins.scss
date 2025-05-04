@@ -1,0 +1,10 @@
+@use './Variables';
+
+// Миксин для создания :hover у элементов для разрешения мониторов ПК и ноутбуков.
+@mixin Hoverable {
+  @media (screen and min-width: Variables.$desktop-width) {
+    &:hover {
+      @content;
+    }
+  }
+}

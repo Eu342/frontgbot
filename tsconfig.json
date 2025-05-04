@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "rootDirs": [
+      "src"
+    ],
+    "outDir": "build",
+    "typeRoots": [
+      "node_modules/@types",
+      "Typings"
+    ],
+    "baseUrl": "src",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "jsx": "react",
+    "sourceMap": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "incremental": true,
+    "noFallthroughCasesInSwitch": true,
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules",
+        "options": {
+          "customTemplate": "./customTemplate.js"
+        }
+      }
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "Typings/Modules.d.ts",
+    "Typings/Types.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "__webpack__",
+    "*.config.js"
+  ],
+  "paths": {
+    "Assets/*": ["src/Assets/*"],
+    "Entry/*": ["src/Entry/*"],
+    "Modules/*": ["src/Modules/*"],
+    "Common/*": ["src/Common/*"]
+  }
+}

@@ -1,0 +1,112 @@
+@use '../../../Entry/Styles/Variables';
+@use '../../../Entry/Styles/Mixins';
+
+.select {
+  min-width: 320px;
+  height: 40px;
+  border-radius: 12px;
+
+  background-color: Variables.$input-background-color;
+
+  .value {
+        padding: 12px;
+        height: 40px;
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    border-radius: 12px 12px 0 0;
+    box-sizing: border-box;
+
+    cursor: pointer;
+
+    &__hoverable {
+      @include Mixins.Hoverable {
+        color: #b6afaf;
+
+        background-color: Variables.$input-active-background-color;
+      }
+    }
+  }
+
+  .text {
+    width: 100%;
+    height: 100%;
+
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: #868080;
+    white-space: pre-wrap;
+
+    user-select: none;
+  }
+}
+
+.options {
+  max-height: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  border-radius: 0 0 12px 12px;
+
+  box-sizing: border-box;
+
+  background-color: Variables.$input-background-color;
+
+  scale: 1 0;
+  transform-origin: top;
+  transition: all .5s cubic-bezier(0.2, 0.8, 0.26, 1);
+}
+
+.open {
+  max-height: 320px;
+
+  scale: 1 1;
+
+  overflow-y: auto;
+
+  z-index: 2;
+}
+
+.option {
+  padding: 12px;
+
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border-top: 1px solid #ffffff1f;
+
+  cursor: pointer;
+
+  transition: all .5s cubic-bezier(0.2, 0.8, 0.26, 1);
+
+  &:last-child {
+    border-radius: inherit;
+  }
+
+  @include Mixins.Hoverable {
+    color: #b6afaf;
+
+    background-color: Variables.$input-active-background-color;
+  }
+}
+
+.status {
+  max-width: 16px;
+  max-height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

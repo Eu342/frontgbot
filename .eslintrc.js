@@ -1,0 +1,60 @@
+module.exports = {
+    "root": true,
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": 2015,
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react"
+    ],
+    "rules": {
+        "@typescript-eslint/no-var-requires": "off",
+        "@typescript-eslint/no-unused-vars": [
+        "error",
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_",
+                "caughtErrorsIgnorePattern": "^_"
+            }
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "indent": "off",
+        "no-fallthrough": "off",
+        "no-multiple-empty-lines": [
+            1,
+            {
+                "max": 2
+            }
+        ],
+        "object-curly-spacing": ["error", "always"],
+        "no-nested-ternary": 1,
+        "eqeqeq": 2,
+        "react/prop-types": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    }
+}

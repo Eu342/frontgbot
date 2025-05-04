@@ -1,0 +1,34 @@
+.arrow {
+  padding: 0;
+  margin: 0;
+
+  aspect-ratio: 1;
+
+  position: relative;
+
+  height: 100%;
+  width: 100%;
+
+  background-color: transparent;
+
+  cursor: pointer;
+
+  transition: all .5s cubic-bezier(0.2, 0.8, 0.26, 1);
+}
+
+.X {
+  rotate: 0deg;
+
+  &.isActive {
+    transform: scaleY(-1);
+  }
+}
+
+.Y {
+  rotate: 90deg;
+  opacity: 0.6;
+
+  &.isActive {
+    transform: scaleX(-1);
+  }
+}

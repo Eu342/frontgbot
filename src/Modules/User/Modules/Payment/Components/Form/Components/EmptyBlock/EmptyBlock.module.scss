@@ -1,0 +1,9 @@
+.emptyBlock {
+  //min-height: calc(100dvh - 560px);
+
+  transition: min-height .3s ease-in-out;
+}
+
+.hide {
+  min-height: 0;
+}

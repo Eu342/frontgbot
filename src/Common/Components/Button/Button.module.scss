@@ -1,0 +1,74 @@
+@use '../../../Entry/Styles/Mixins';
+
+.button {
+  margin: 0;
+  padding: 16px;
+
+
+  max-height: 52px;
+  min-height: 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  box-sizing: border-box;
+
+  border: none;
+  border-radius: 12px;
+
+  font-size: 15px;
+  line-height: 1;
+  color: #000;
+
+  cursor: pointer;
+
+  user-select: none;
+}
+
+.GENERAL {
+  max-height: 40px;
+  min-height: 40px;
+
+  padding: 0px 18px;
+  border-radius: 25px;
+  margin-left: 40px;
+
+  background-color: #fff;
+
+  font-weight: 500;
+  color: #000;
+
+  @include Mixins.Hoverable {
+    background-color: #beb3b3;
+  }
+}
+
+.ALTERNATIVE {
+  max-height: 40px;
+  min-height: 40px;
+  border-radius: 25px;
+  color: #000;
+  font-weight: 500;
+  background: #ffffff4a;
+  padding: 0px 18px;
+
+  @include Mixins.Hoverable {
+    background-color: #beb3b3;
+  }
+}
+
+.SUBMIT {
+  background-color: #fff;
+    width: 100%;
+  font-weight: 500;
+
+  @include Mixins.Hoverable {
+    background-color: #beb3b3;
+  }
+}
+
+.OPTION {
+  font-weight: 600;
+}

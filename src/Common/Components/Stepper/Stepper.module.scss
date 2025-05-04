@@ -1,0 +1,15 @@
+.stepper {
+  min-height: 10px;
+  max-height: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.step {
+  width: 20px;
+  height: 6px;
+}

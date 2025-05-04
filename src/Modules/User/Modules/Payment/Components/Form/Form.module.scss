@@ -1,0 +1,16 @@
+@use "../../../../../../Entry/Styles/Variables";
+
+.form {
+  border-radius: 12px;
+
+  /* background-color: Variables.$deep-space-color; */
+}
+
+.content {
+  padding: 0 20px;
+
+  width: 100%;
+
+  box-sizing: border-box;
+  margin-left: 40px;
+}

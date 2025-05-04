@@ -1,0 +1,54 @@
+.swiper {
+  padding: 0;
+  max-width: 440px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+
+  border-radius: 25px;
+  box-sizing: border-box;
+
+  background-color: #101010ca;
+  border: 1px solid rgba(35, 34, 34, 0.7215686275);
+}
+
+.swipeBlock {
+  min-height: 0;
+
+  transition: all .5s cubic-bezier(0.2, 0.8, 0.26, 1);
+}
+
+.opened {
+  min-height: calc(100dvh - 98px);
+}
+
+.extendButton {
+  padding: 12px 0;
+
+  width: 100%;
+  height: 6px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  box-sizing: border-box;
+
+  cursor: pointer;
+
+  background-color: transparent;
+  margin-top: 10px;
+}
+
+.swipeArea {
+  width: 10%;
+  height: 6px;
+
+  border-radius: 12px;
+
+  background-color: rgb(137, 137, 137);
+  opacity: 0.3
+}

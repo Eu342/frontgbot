@@ -1,0 +1,10 @@
+@use "../../../../../../Entry/Styles/Variables";
+
+.form {
+  width: 100%;
+  min-height: inherit;
+
+  border-radius: 25px;
+
+  /* background-color: Variables.$deep-space-color; */
+}
