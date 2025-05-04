@@ -14,6 +14,7 @@ export const TRANSLATIONS = {
         [EStepperStep.SUBSCRIBTION]: 'Нажмите на “Добавить подписку” и она автоматически добавится в приложение, затем перейдите к следующему шагу',
         [EStepperStep.ENDING]: 'Если у вас возникли сложности, то перейдите в раздел “Помощь” или напишите нам'
     },
+    customSubtitle: 'Инструкция по подключению доступна на нашем GitBook, нажмите на кнопку ниже, чтобы открыть инструкцию',
     options: {
         [EOperationSystemType.IOS]: 'из\nAppStore',
         [EOperationSystemType.ANDROID]: 'из\nGoogle Play',
